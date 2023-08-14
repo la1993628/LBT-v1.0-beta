@@ -2,10 +2,10 @@
 
 # Compiler settings
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -O2
+CXXFLAGS = -std=c++11 -Wall -O2 -pedantic -Wshadow -fPIC -pthread
 
 # PYTHIA8 settings
-PYTHIA8_DIR = /home/luoao/pythia8307
+PYTHIA8_DIR = /mnt/e/LBT-jet/pythia8307
 PYTHIA8_INC = $(PYTHIA8_DIR)/include
 PYTHIA8_LIB = $(PYTHIA8_DIR)/lib -lpythia8
 
